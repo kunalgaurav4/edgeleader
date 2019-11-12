@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>EdgeLedger Financial | Accounting & Investment</title>
 </head>
 
@@ -128,7 +129,10 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Enter Message"></textarea>
                 </div>
-                <input type="submit" value="Send" class="btn btn-dark">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <br />
+                <input type="submit" value="send" class="btn btn-dark">
+                <!-- <input type="submit" value="Send" class="btn btn-dark"> -->
             </form>
         </div>
         <div class="map"></div>
@@ -153,6 +157,10 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPbyJsjKRV1KfUN-v0zY0eJ2QoTd_QsIs&callback=initMap"
         async defer></script>
+    <!-- Captcha -->
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
 
 </body>
 

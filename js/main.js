@@ -21,6 +21,8 @@ window.addEventListener('scroll', function () {
 });
 
 
+
+
 // Smooth Scrolling
 $('#navbar a').on('click', function (event) {
   if (this.hash !== '') {
@@ -36,3 +38,9 @@ $('#navbar a').on('click', function (event) {
     );
   }
 });
+
+<script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+};
+</script>
